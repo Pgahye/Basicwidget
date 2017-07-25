@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jx372.basicwidget.MainActivity">
+
+    <TextView
+        android:id="@+id/tvwidget"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:background="#220000ff"
+        android:padding="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="45dp"
+        android:textSize="32sp"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btninvisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvwidget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:clickable="false"
+        android:text="INVISIBLE" />
+
+    <Button
+        android:id="@+id/btngone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="GONE"
+        android:layout_below="@+id/btninvisible"
+        android:layout_alignStart="@+id/btninvisible" />
+
+    <Button
+        android:id="@+id/btnvisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="VISIBLE"
+        android:layout_below="@+id/btngone"
+        android:layout_alignStart="@+id/btngone" />
+
+
+</RelativeLayout>
